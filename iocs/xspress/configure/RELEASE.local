@@ -7,6 +7,7 @@ SUPPORT=/odin/epics/support
 # Support module dependencies
 ADCORE=$(SUPPORT)/areaDetector-R3-12-1/ADCore
 ASYN=$(SUPPORT)/asyn-R4-44-2
+BUSY=$(SUPPORT)/busy-R1-7-4
 CALC=$(SUPPORT)/calc-R3-7-5
 RESTCLIENT=$(SUPPORT)/restClient
 
