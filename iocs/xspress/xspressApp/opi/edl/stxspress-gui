@@ -26,7 +26,7 @@ else
     OPTS="-x -eolc -noedit"
 fi
 
-EDMDATAFILES="${EDMDATAFILES}:${ASYN}/ADApp/opi/edm"
+EDMDATAFILES="${EDMDATAFILES}:${ASYN}/opi/edm"
 EDMDATAFILES="${EDMDATAFILES}:${ADCORE}/ADApp/op/edl"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/odinApp/op/edl/xspress"
 
