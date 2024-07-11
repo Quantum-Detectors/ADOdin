@@ -26,6 +26,7 @@ fi
 
 EDMDATAFILES="${EDMDATAFILES}:${ASYN}/opi/edm"
 EDMDATAFILES="${EDMDATAFILES}:${ADCORE}/ADApp/op/edl"
+EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/odinApp/op/edl/odin"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/odinApp/op/edl/xspress"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/iocs/xspress/xspressApp/opi/edl"
 
