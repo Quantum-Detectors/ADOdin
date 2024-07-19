@@ -8,6 +8,7 @@ AREADETECTOR=${SUPPORT}/areaDetector-R3-12-1
 ASYN=${SUPPORT}/asyn-R4-44-2
 ADCORE=${AREADETECTOR}/ADCore
 ADODIN=${SUPPORT}/ADOdin
+PROCSERV=${SUPPORT}/procServControl
 
 # first load the paths. These have been generated from the configure/RELEASE
 # tree. If we have a -d arg then load the opi/edl paths first
@@ -29,6 +30,7 @@ EDMDATAFILES="${EDMDATAFILES}:${ADCORE}/ADApp/op/edl"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/odinApp/op/edl/odin"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/odinApp/op/edl/xspress"
 EDMDATAFILES="${EDMDATAFILES}:${ADODIN}/iocs/xspress/xspressApp/opi/edl"
+EDMDATAFILES="${EDMDATAFILES}:${PROCSERV}/procServControlApp/opi/edl"
 
 
 export EDMDATAFILES
