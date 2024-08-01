@@ -33,8 +33,6 @@ dbpf "XSPRESS:CAM:CONFIG_PATH", "/home/xspress3/xspress3_settings/current"
 
 dbpf "XSPRESS:CAM:LiveViewEndpoint", "tcp://127.0.0.1:15510"
 
-dbpf "XSPRESS:CAM:RECONFIGURE", "1"
-
 dbpf "XSPRESS:OD:ImageHeight", "1"
 
 dbpf "XSPRESS:OD:ImageWidth", "4096"
@@ -44,3 +42,13 @@ dbpf "XSPRESS:OD:NumFramesChunks", "1"
 dbpf "XSPRESS:OD:NumRowChunks", "1"
 
 dbpf "XSPRESS:OD:NumColChunks", "4096"
+
+# TODO: tidy up below commands before release
+# -------------------------------------------
+dbpf "XSPRESS:OD:FilePath", "/data/odin-testing"
+dbpf "XSPRESS:OD:FileName", "test.hdf5"
+dbpf "XSPRESS:OD:DataType", "1"
+dbpf "XSPRESS:CAM:RUN_FLAGS", "2"
+# -------------------------------------------
+
+dbpf "XSPRESS:CAM:RECONFIGURE", "1"
