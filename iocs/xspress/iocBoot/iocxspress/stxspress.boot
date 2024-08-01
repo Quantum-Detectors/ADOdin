@@ -49,6 +49,7 @@ dbpf "XSPRESS:OD:FilePath", "/data/odin-testing"
 dbpf "XSPRESS:OD:FileName", "test.hdf5"
 dbpf "XSPRESS:OD:DataType", "1"
 dbpf "XSPRESS:CAM:RUN_FLAGS", "2"
+dbpf "XSPRESS:CAM:TriggerMode", "2"
 # -------------------------------------------
 
 dbpf "XSPRESS:CAM:RECONFIGURE", "1"
