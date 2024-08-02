@@ -29,7 +29,8 @@ dbpf "XSPRESS:OD:ReadStatus.SCAN", "7"
 
 dbpf "XSPRESS:CAM:ReadStatus.SCAN", "7"
 
-dbpf "XSPRESS:CAM:CONFIG_PATH", "/home/xspress3/xspress3_settings/current"
+# TODO: check if this is required as also in odin_server.cfg with different path
+# dbpf "XSPRESS:CAM:CONFIG_PATH", "/home/xspress3/xspress3_settings/current"
 
 dbpf "XSPRESS:CAM:LiveViewEndpoint", "tcp://127.0.0.1:15510"
 
