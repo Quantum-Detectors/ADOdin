@@ -53,3 +53,8 @@ dbpf "XSPRESS:OD:ImageWidth", "4096"
 dbpf "XSPRESS:OD:NumFramesChunks", "1"
 dbpf "XSPRESS:OD:NumRowChunks", "1"
 dbpf "XSPRESS:OD:NumColChunks", "4096"
+
+# -------------------------------------------
+# Enable NDStdArrays callbacks for live view
+# -------------------------------------------
+dbpf "XSPRESS:ARR:EnableCallbacks", "Enable"
