@@ -31,15 +31,15 @@ dbpf "XSPRESS:CAM:ReadStatus.SCAN", "7"
 
 dbpf "XSPRESS:CAM:LiveViewEndpoint", "tcp://127.0.0.1:15510"
 
-# TODO: check if this is required as also in odin_server.cfg with different path
+# Optionally override the config path
 # dbpf "XSPRESS:CAM:CONFIG_PATH", "/home/xspress3/xspress3_settings/current"
 
-# TODO: tidy up below commands before release
+# Set some initial acquisition parameters
 # -------------------------------------------
 dbpf "XSPRESS:CAM:RUN_FLAGS", "2"
 dbpf "XSPRESS:CAM:TriggerMode", "2"
 
-dbpf "XSPRESS:OD:FilePath", "/data/odin-testing"
+dbpf "XSPRESS:OD:FilePath", "/tmp"
 dbpf "XSPRESS:OD:FileName", "test.hdf5"
 # -------------------------------------------
 
