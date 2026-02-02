@@ -340,7 +340,7 @@ release 1
 x 205
 y 115
 w 75
-h 20
+h 40
 font "arial-bold-r-12.0"
 fgColor index 14
 bgColor index 3
@@ -359,7 +359,7 @@ release 0
 x 355
 y 115
 w 75
-h 20
+h 40
 controlPv "$(P)$(R)AcquireTime_RBV"
 fgColor index 16
 fgAlarm
@@ -378,7 +378,7 @@ release 0
 x 285
 y 115
 w 65
-h 20
+h 40
 controlPv "$(P)$(R)AcquireTime"
 fgColor index 25
 fgAlarm
@@ -1530,7 +1530,7 @@ major 4
 minor 1
 release 1
 x 205
-y 165
+y 205
 w 70
 h 20
 font "arial-bold-r-12.0"
@@ -1549,7 +1549,7 @@ major 10
 minor 0
 release 0
 x 365
-y 165
+y 205
 w 65
 h 20
 controlPv "$(P)$(R)MODE_RBV"
@@ -1559,6 +1559,68 @@ bgColor index 10
 fill
 font "arial-bold-r-12.0"
 fontAlign "center"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 285
+y 240
+w 75
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+topShadowColor index 1
+botShadowColor index 11
+controlPv "XSPRESS:CAM:RESET_TS"
+pressValue "Yes"
+releaseValue "No"
+onLabel "Yes"
+offLabel "No"
+toggle
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 205
+y 240
+w 90
+h 30
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Reset TS"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 385
+y 240
+w 25
+h 25
+controlPv "$(P)$(R)RESET_TS"
+lineColor index 14
+onColor index 15
+offColor index 19
+lineWidth 2
+numBits 1
 endObjectProperties
 
 # (Menu Button)
@@ -1625,7 +1687,7 @@ major 4
 minor 1
 release 0
 x 300
-y 165
+y 205
 w 55
 h 20
 fgColor index 25
@@ -1649,7 +1711,7 @@ major 4
 minor 1
 release 0
 x 245
-y 165
+y 205
 w 55
 h 20
 fgColor index 25
@@ -1710,9 +1772,9 @@ major 4
 minor 1
 release 1
 x 205
-y 140
+y 160
 w 75
-h 20
+h 40
 font "arial-bold-r-12.0"
 fgColor index 14
 bgColor index 3
@@ -1729,9 +1791,9 @@ major 10
 minor 0
 release 0
 x 355
-y 140
+y 160
 w 75
-h 20
+h 40
 controlPv "$(P)$(R)NumImages_RBV"
 fgColor index 16
 fgAlarm
@@ -1748,9 +1810,9 @@ major 10
 minor 0
 release 0
 x 285
-y 140
+y 160
 w 65
-h 20
+h 40
 controlPv "$(P)$(R)NumImages"
 fgColor index 25
 fgAlarm

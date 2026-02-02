@@ -336,6 +336,31 @@ record(longin, "$(P)$(R)DEBOUNCE_RBV")
    field(SCAN, "I/O Intr")
 }
 
+# ///
+# /// Sets the reset timestamp parameter, whether TS resets to zero
+# /// at the start of acquisition
+# ///
+record(bo, "$(P)$(R)RESET_TS")
+{
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))_ODI_config/reset_ts")
+    field(ZNAM, "No")
+    field(ONAM, "Yes")
+}
+
+# ///
+# /// Sets the reset timestamp parameter, whether TS resets to zero
+# /// at the start of acquisition
+# ///
+record(bi, "$(P)$(R)RESET_TS_RBV")
+{
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))_ODI_config/reset_ts")
+    field(ZNAM, "No Reset")
+    field(ONAM, "Reset")
+    field(SCAN, "I/O Intr")
+}
 
 ############
 # Commands #
@@ -432,8 +457,6 @@ record(waveform, "$(P)$(R)APP_ENDPOINT_RBV")
     field(NELM, "256")
     field(SCAN, "I/O Intr")
 }
-
-
 
 ##################
 # Adapter params #
