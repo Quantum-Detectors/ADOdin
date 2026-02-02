@@ -1568,45 +1568,22 @@ major 4
 minor 1
 release 0
 x 285
-y 235
-w 40
-h 30
+y 240
+w 75
+h 25
 fgColor index 25
 onColor index 4
 offColor index 3
 topShadowColor index 1
 botShadowColor index 11
-controlPv "$(P)$(R)RESET_TS"
-pressValue "1"
+controlPv "XSPRESS:CAM:RESET_TS"
+pressValue "Yes"
+releaseValue "No"
 onLabel "Yes"
-offLabel "Yes"
-3d
-useEnumNumeric
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Message Button)
-object activeMessageButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 325
-y 235
-w 40
-h 30
-fgColor index 25
-onColor index 4
-offColor index 3
-topShadowColor index 1
-botShadowColor index 11
-controlPv "$(P)$(R)RESET_TS"
-pressValue "0"
-onLabel "No"
 offLabel "No"
+toggle
 3d
-useEnumNumeric
-font "arial-bold-r-12.0"
+font "arial-medium-r-18.0"
 endObjectProperties
 
 # (Static Text)
@@ -1616,9 +1593,9 @@ major 4
 minor 1
 release 1
 x 205
-y 235
+y 240
 w 90
-h 40
+h 30
 font "arial-bold-r-12.0"
 fgColor index 14
 bgColor index 3
@@ -1635,9 +1612,9 @@ major 4
 minor 0
 release 0
 x 385
-y 235
-w 30
-h 30
+y 240
+w 25
+h 25
 controlPv "$(P)$(R)RESET_TS"
 lineColor index 14
 onColor index 15
