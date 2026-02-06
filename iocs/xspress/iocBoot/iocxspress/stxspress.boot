@@ -29,7 +29,7 @@ dbpf "XSPRESS:OD:ReadStatus.SCAN", "7"
 
 dbpf "XSPRESS:CAM:ReadStatus.SCAN", "7"
 
-dbpf "XSPRESS:CAM:LiveViewEndpoint", "tcp://127.0.0.1:15510"
+dbpf "XSPRESS:CAM:LiveViewEndpoint", "tcp://127.0.0.1:15550"
 
 # Optionally override the config path
 # dbpf "XSPRESS:CAM:CONFIG_PATH", "/home/xspress3/xspress3_settings/current"
